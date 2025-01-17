@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Contribitor types
+# Contributor types
 
 Developer contributors come in three classifications: user, bot, anonymous. 
 
