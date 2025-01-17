@@ -4,12 +4,29 @@ sidebar_position: 1
 
 # Builder segments
 
-Builders are segmented by a variety of characteristics. The primary distinction across builders is developers and researchers. Developers are characteristically define by the existence of a github repository and working code contributions. A researcher is defined by a Discourse profile and activity. 
+Builders are split into two primary subgroups: developers and researchers. Developers are blockchain accounts with a github repository and working code contributions. Researchers are blockchain accounts with a Discourse profile.
 
-The developer segment is first characterized by software languages. We segment both developer project repos and developers. 
+Developers and researchers are further segmented by a variety of characteristics. The developer segment is primarily characterized by software languages. 
 
 Repo segmentation criteria:
 - Categorize repos by language, where:
-  - if any language other than javascript, typescript, html, or css makes up 60% or more of the repo's total bytes, then segment the repo by that language
-  - filter out repo url ending in 'token-list', 'assets', 'tokens', or 'chains'
-  - filter out project name that is equal to 'gitcoin grants'. The Gitcoin Grants data lists all repos that have been funded by Gitcoin Grants.
+  - Repo is not a token repo (e.g., /assets, /tokens, token-list, etc.)
+  - Languages is not equal to JavaScript, TypeScript, CSS, HTML
+  - Developer type is not equal to bot
+  - The total bytes written for the language is greater than or equal to 25% of all Non-front-end language bytes written
+  - Project name is not equal to Gitcoin Grants (Gitcoin Grants repo lists the repos of all grantee recipients)
+- Ranking projects within the language segment
+  - Normalize the bytes written, language percentage share of the project, stargaze count, contributor count, repo count, and fork count across all projects in the resulting cohort. We use a simple scale between 0-1. 
+  - Assign weights to each normalized category, as follows:
+    - bytes written: 15%
+    - language dominance: 10%
+    - stargaze count: 25%
+    - contributor count: 20%
+    - repo count: 5%
+    - fork count: 25% 
+  - Rank using final weighted score
+  - Filter for top 250 projects
+- Assigning categories: Top Project, Leader, In-The-Mix, Laggard:
+  - Calculate quartiles for top 250 projects by weighted score
+  - Assign labels: Top Project = top quartile; Leader = 3rd quartile; In-The-Mix = 2nd quartile; Laggard = bottom quartile
+
