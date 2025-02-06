@@ -18,4 +18,4 @@ Onchain donations can be made to builder.love on [giveth.io](https://giveth.io/p
 
 ## Gitcoin
 
-coming soon
+Onchain donations can be made to builder.love on [gitcoin.co](https://explorer.gitcoin.co/#/projects/0xce09b8872fca30e7c56d95bee77c9f30c4b40e174a5c08e64bad0aa53a57a248).
