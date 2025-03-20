@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # How we handle forks
 
-From the Crypto Ecosystems data, we can see that projects list all of the repos that are used in their work, as well as the repos used in sub projects of their project. 
+In the Crypto Ecosystems data below, we can see that project teams list all of the repos that are used in their work, as well as the repos that are used in sub projects of their project. 
 
 ![top appearing forks](/img/top_appearing_forks.png)
 
