@@ -8,6 +8,8 @@ builder.love is for blockchain developers and researchers who want deep insights
 
 ## Validate top trends
 
+We rank blockchain projects across the entire industry using a relative score that is derived from current and historical development activity. You can see the top 50 projects, as well as their development activity trends, [here](https://www.builder.love/).
+
 Use the [Languages](https://www.builder.love/languages) page to see the top languages used by developers.
 
 Find projects that are building in the top languages using the [Builder Segments](https://www.builder.love/developers) page.
