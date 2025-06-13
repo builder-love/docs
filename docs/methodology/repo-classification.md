@@ -24,6 +24,8 @@ We think a false positive i.e., predicting a repo is a developer tooling codebas
 
 In their current state, the models are useful. But they do not perform as well as we would like. We know the real work to improving them is better labeling in our training data—this takes time and a well-thought through framework for making decisions on the margins. 
 
+Further work is needed to explore ways to reduce the need for data labeling. N-shot learning models are designed specifically for this, and will be researched for cost/feasability.
+
 ### Education classification
 
 This class of repos exists solely for the purpose of learning and communicating ideas and facts. These repos can be identified using keywords:
