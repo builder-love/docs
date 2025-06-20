@@ -137,7 +137,7 @@ Performance:
 
 The infrastructure model was very poor when we first ran it. The model was precise in its positive predictions less than 20 percent of the time. We spent a lot of time labeling, and got the precision up into the 80 percent range. Applying the model to the population yields 38,263 repos classified as infrastructure. 
 
-![Infra Model Performance](/img/infra_model_performance_snippet_june_2025)
+![Infra Model Performance](/img/infra_model_performance_snippet_june_2025.png)
 
 ### End-user application classification
 
@@ -156,7 +156,7 @@ Performance:
 
 From the below we can see this model is not doing a great job of predicting repos as applications, with a “shot on goal” ratio of 32 percent, and catching 74 percent of repos that consist of application code. This model, like the scaffold and dev tooling models, suffer from an imbalanced training data set i.e., there are many more false values than true values. This makes the model really good at predicting when a repo is not application. So here too we bump up the confidence threshold, this time to 95 percent, and sacrifice recall so that we can improve precision. The outcome is we will fail to label repos as application when they are, but when we do label as application we are very confident in the label. When we apply this model to the population we positively label 26,568 (out of 314,747) repos as application. 
 
-![Infra Model Performance](/img/app_model_performance_snippet_june_2025)
+![Infra Model Performance](/img/app_model_performance_snippet_june_2025.png)
 
 ## Pipeline architecture
 
