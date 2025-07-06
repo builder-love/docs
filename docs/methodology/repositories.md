@@ -12,6 +12,6 @@ We also see that some repos are widely used across the crypto ecosystem, and tha
 
 ![top appearing repos](/img/top_appearing_repos.png)
 
-For repos that are widely used across the ecosystem, we run the risk of double counting metadata when we aggregate by top level project. Examples of metadata that are aggregated include stargaze, forks, and contributors.
+For repos that are widely forked across the ecosystem, we run the risk of double counting metadata when we aggregate by top level project. Examples of metadata that are aggregated include stargaze, forks, commits, watchers, and contributors. The double counting problem is only a problem for metrics that are retained in the forked repo i.e., commit count and contributor list. Stargaze, forks, and watcher counts are reset to zero in forks.
 
-So, what is the best way to handle aggregated metadata? We could go upstream and aggegrate metadata to the paraent repo, but this would discard work done by the forked repo. So we simply aggregate the metadata by the forked repo. The downside is that forked repo metadata will be aggregated to a project, even if that fork has not deviated from the parent repo. This should not be a concern, since unmodified forks are not likely to have been stared, for instance. 
+What is the best way to handle aggregated repo metadata at the project level? We could go upstream and only aggegrate metadata to the parent repo, but this would discard any work performed by the forked repo. In many cases, we simply aggregate the repo metadata regardless of fork status. The downside is that forked repo metadata will be aggregated to a project, even if that fork has not deviated from the parent repo. 
