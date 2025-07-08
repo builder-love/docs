@@ -16,13 +16,15 @@ The Weighted Score is calculated weekly to rank blockchain projects based on Git
 
 3. Repo metrics are rolled up to the project level. Some projects, like Ethereum have many sub-ecosystems.
 
-4. Normalization: For each metric, every project's value is compared to all other projects within the same week and scaled to a value between 0 and 1.
+4. Remove forked repos for metrics that retain activity history when forked, like commits and contributors. 
 
-5. Weighting: These normalized scores are multiplied by specific weights:
+5. Normalization: For each metric, every project's value is compared to all other projects within the same week and scaled to a value between 0 and 1.
+
+6. Weighting: These normalized scores are multiplied by specific weights:
 
 - Major All-Time Metrics (12.5% each): Commits, Forks, Stars, Contributors.
 - Minor Metrics (10% each): All-time Watchers, All-time Originality Ratio
 - Major Recent Change Metrics (5% each): 4-week change in Commits, Forks, Stars, Contributors, watchers, and Originality Ratio.
-6. Summation: The weighted, normalized scores for all metrics are added together to get a final weighted_score between 0 and 1.
+7. Summation: The weighted, normalized scores for all metrics are added together to get a final weighted_score between 0 and 1.
 
-7. Index Conversion: The "Weighted Score Index" shown in the chart is simply this weighted_score multiplied by 100.
+8. Index Conversion: The "Weighted Score Index" shown in the chart is simply this weighted_score multiplied by 100.
