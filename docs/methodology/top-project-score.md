@@ -21,8 +21,8 @@ The Weighted Score is calculated weekly to rank blockchain projects based on Git
 5. Weighting: These normalized scores are multiplied by specific weights:
 
 - Major All-Time Metrics (12.5% each): Commits, Forks, Stars, Contributors.
-- Major Recent Change Metrics (10% each): 4-week change in Commits, Forks, Stars, Contributors.
-- Minor Metrics (2.5% each): All-time Watchers, All-time Originality Ratio, 4-week change in Watchers, 4-week change in Originality Ratio.
+- Minor Metrics (10% each): All-time Watchers, All-time Originality Ratio
+- Major Recent Change Metrics (5% each): 4-week change in Commits, Forks, Stars, Contributors, watchers, and Originality Ratio.
 6. Summation: The weighted, normalized scores for all metrics are added together to get a final weighted_score between 0 and 1.
 
 7. Index Conversion: The "Weighted Score Index" shown in the chart is simply this weighted_score multiplied by 100.
